@@ -1,11 +1,12 @@
 {
   "name": "webpack-build-upload-alioss-plugin",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "将构建后的文件上传到oss上",
   "main": "./src/webpack-upload-oss-plugin.js",
   "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --inspect-brk ./node_modules/webpack/bin/webpack.js"
   },
   "author": "潘飞龙",
   "license": "mit",
@@ -22,6 +23,11 @@
     "ali-oss": "^6.17.1",
     "async": "^3.2.3",
     "fs": "^0.0.1-security",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "single-line-log": "^1.1.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   }
 }

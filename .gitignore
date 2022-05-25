@@ -16,3 +16,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Webstorm
+uploadOss.config.js
+uploadOss.config.json
