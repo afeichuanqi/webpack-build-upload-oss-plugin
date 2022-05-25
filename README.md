@@ -1,3 +1,9 @@
+#安装
+````
+npm install webpack-build-upload-alioss-plugin -D
+yarn add webpack-build-upload-alioss-plugin -D
+````
+
 # webpack-build-upload-alioss-plugin
 <u>**<u>作用：将打包后的文件上传到阿里云oss上</u>**</u>
 
@@ -10,15 +16,16 @@
 
 ## uploadOss.config.json
 
-```{
-    "region": "",
-    "accessKeyId": "",
-    "accessKeySecret": "",
-    "bucket": "",
+```
+module.exports = {
+    region: "",
+    accessKeyId: "",
+    accessKeySecret: "",
+    bucket: "",
     以上是oss上传必备
     The above is necessary for oss upload
-    "bucketPath": "/build", 上传到阿里云哪个文件夹 **Which folder to upload to Alibaba Cloud**
-    "enable": true 是否开启
+    bucketPath: "/build", 上传到阿里云哪个文件夹 **Which folder to upload to Alibaba Cloud**
+    enable: true 是否开启
 }
 ```
 
